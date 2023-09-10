@@ -14,8 +14,11 @@ func main() {
 func buscaSoma(vetor []int, alvo int) (int, int) {
 
 	//n := len(vetor)
-	limInferior := 0
-	limSuperior := len(vetor) - 1
+	var limInferior int
+	limInferior = 0
+
+	var limSuperior int
+	limSuperior = len(vetor) - 1
 
 	//fmt.Println(limInferior)
 	//fmt.Println(limSuperior)
@@ -31,8 +34,10 @@ func buscaSoma(vetor []int, alvo int) (int, int) {
 			break
 		} else if soma < alvo {
 			limInferior += 1
+			fmt.Println(limInferior)
 		} else {
 			limSuperior -= 1
+			fmt.Println(limSuperior)
 		}
 		fmt.Println(limInferior)
 		fmt.Println(limSuperior)
