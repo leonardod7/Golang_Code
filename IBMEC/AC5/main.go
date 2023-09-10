@@ -39,8 +39,8 @@ func buscaSoma(vetor []int, alvo int) (int, int) {
 			limSuperior -= 1
 			fmt.Println(limSuperior)
 		}
-		fmt.Println(limInferior)
-		fmt.Println(limSuperior)
+		//fmt.Println(limInferior)
+		//fmt.Println(limSuperior)
 	}
 	return -1, -1
 }
