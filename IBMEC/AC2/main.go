@@ -48,6 +48,7 @@ func main() {
 		fmt.Println("Contato excluído")
 
 	}
+
 	fmt.Println(utils.VisualizarListaContatos(contatos))
 
 }
