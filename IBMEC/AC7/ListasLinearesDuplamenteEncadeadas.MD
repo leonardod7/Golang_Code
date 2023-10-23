@@ -43,3 +43,65 @@ Para este estudo dirigido, estude os casos particulares de listas lineares dupla
 <div id='resolucao'/>
 
 ## Resolução do Problema
+
+- > Exibição dos nós em uma Lista Duplamente Encadeada;
+
+
+Obs.: nó_cabeça -> primeiro nó
+
+``` 
+
+func exibir(lista, valor) {
+    var valor
+    ponteiro := nó_cabeça
+    enquanto ponteiro != valor:
+        retorne ponteiro.lista[valor]
+        ponteiro := ponteiro.proximo 
+}
+
+   
+```
+
+- > Busca de um nó;
+
+```
+
+Pseudocódigo: 
+
+func busca(valor) {
+    
+    var valor
+    var z
+     
+    anterior := nó_cabeça
+    ponteiro := nó_cabeça.proximo
+    enquanto ponteiro[index] != z:
+        se ponteiro[index] < valor:
+            anterior = ponteiro
+            ponteiro = ponteiro.proximo
+        caso contrário:
+            ponteiro := z
+}
+```
+
+- > Inserção de um nó em uma Lista Duplamente Encadeada;
+
+``` 
+se busca(valor, x) = z
+    ponteiro.valor := valor
+    ponteiro[index] := x
+    ponteiro.próximo = nó_anterior.proximo
+    nó_anterior.próximo := ponteiro
+
+```
+
+- > Remoção de um nó;
+
+``` 
+resultado := busca(valor)
+se ponteiro != resultado
+    nó_anterior := nó_seguinte
+    valor := ponteiro.valor
+    remove ponteiro
+
+```
